@@ -71,7 +71,7 @@ This project can be easily deployed using Vercel:
 Live Demo: [https://nova-subscription-form.vercel.app](https://nova-subscription-form.vercel.app)
 
 ## Screenshots
-![Subscription Form](./subscription-form.png)
+![Subscription Form](public/subscription-form.png)
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.

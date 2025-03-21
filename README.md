@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Subscription Form
 
-## Getting Started
+This is a Next.js project that implements a subscription form where users can enter their phone number and receive a QR code for confirmation. The form is fully responsive and built using **Tailwind CSS** and **Shadcn/ui**.
 
-First, run the development server:
+## Features
+- **Phone Number Validation**: Validates the phone number using a regex pattern.
+- **QR Code Generation**: Generates a QR code for the entered phone number.
+- **Loading State**: Displays a loading spinner while generating the QR code.
+- **Responsive Design**: Built with Tailwind CSS for a fully responsive layout.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **Shadcn/ui**: A collection of reusable UI components.
+- **QRCode.react**: A library for generating QR codes in React.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Run Locally
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Follow these steps to run the project on your local machine:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/shamimthedev/subscription-form.git
+   cd subscription-form
+2. Install Dependencies
+    npm install
+3. Run the Development Server
+    npm run dev
+4. Open in Your Browser
+    Navigate to http://localhost:3000 to view the project.
 
-## Learn More
+Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+subscription-form/
+├── src/
+│   ├── app/
+│   │   └── page.js          # Main page component
+│   ├── components/
+│   │   └── SubscriptionForm.jsx  # Subscription form component
+│   └── styles/
+│       └── globals.css      # Global styles
+├── public/                  # Static assets
+├── tailwind.config.js       # Tailwind CSS configuration
+├── postcss.config.js        # PostCSS configuration
+├── next.config.js           # Next.js configuration
+└── README.md                # This file
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Requirements
+- Node.js (v16 or higher)
+- npm (v7 or higher)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Dependencies
+- next: ^13.0.0
+- react: ^18.0.0
+- react-dom: ^18.0.0
+- tailwindcss: ^3.0.0
+- shadcn/ui: Latest version
+- qrcode.react: ^1.0.0
+- lucide-react: ^0.100.0
 
-## Deploy on Vercel
+# Deployment
+This project can be easily deployed using Vercel:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Go to Vercel.
+2. Import your GitHub repository.
+3. Follow the steps to deploy your project.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Live Demo: https://nova-subscription-form.vercel.app
+
+# Screenshots
+/subscription-form.png
+
+# License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+# Author
+Md. Shamim Hossain
